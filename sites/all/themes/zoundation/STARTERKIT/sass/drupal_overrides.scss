@@ -1,0 +1,160 @@
+// You custom settings file to override Foundation defaults
+@import "settings";
+@import "compass/css3";
+
+// Styles for Messages - we are removing sysem.messages.css in .info file
+@import "partials/_messages";
+
+// Styles for Buttons
+#edit-actions {
+  input {
+    margin-right: 10px;
+  }
+}
+
+
+// Admin Styles
+dl {
+  &.node-type-list, &.admin-list {
+    dt {
+      font-size: 1.3em;
+      margin-bottom: 5px;
+    }
+    dd {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+//  Search Forms
+
+.top-bar ul > li.search:hover, .top-bar ul > li.search:focus {
+  background: none;
+}
+
+#search-block-form {
+  position: relative;
+  width: 275px;
+  margin-top: 4px;
+
+  input[type="text"] {
+    display: inline-block;
+    float: left;
+    margin-right: 0;
+    margin-top: 1px;
+    width: 65%;
+    height: 35px; 
+  }
+  
+  input[type="submit"].button {
+    display: inline-block;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+// Replacing Autocomplete throbber and repositioning
+
+html.js input[type="text"].form-autocomplete {
+  background-image: url('../images/throbber.gif');
+  background-position: 100% 9px;
+  background-repeat: no-repeat;
+  @include transition(none 0 linear);
+}
+
+html.js input[type="text"].throbbing {
+  background-position: 100% -18px; /* LTR */
+}
+
+// Removing bullets from action link buttons
+.action-links li, .node-readmore, .comment-add {
+  list-style: none;
+}
+
+.comment-add {
+  margin-top: 15px;
+}
+
+
+// User Form
+.password-confirm, .password-strength {
+  margin: 10px 0;
+}
+
+fieldset {
+  padding: 12px;
+}
+
+#header {
+  margin-top: 60px;
+}
+
+// fixing contextual link sprite height in topbar
+
+.top-bar ul > li a.contextual-links-trigger {
+  height: 18px;
+  &:after {
+    border: none;
+  }
+}
+
+footer {
+  background: $black;
+  color: white;
+  padding: 11px 0;
+  margin-top: 30px;
+}
+
+// Adding left margin to ul so they don't fall out of content areas
+.node .content ul, ul.menu, .password-suggestions ul {
+  
+  li {
+    margin-left: 20px;
+    
+    ul li {
+      margin-left: 10px;
+    }
+  }
+}
+
+// Overlay Styles
+#overlay {
+  
+  #header, footer {
+    display: none;
+  }
+
+  #content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #overlay-tabs {
+    margin-top: -39px;
+    
+    dd {
+      background: $white;
+      background: rgba(255,255,255, 0.95);
+    }
+
+  }
+}
+
+
+// Style for Orbit Slider
+
+.orbit {
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+// Fixing width and position for Draggable handles
+
+a.tabledrag-handle .handle {
+  width: 19px;
+  height: 21px;
+}

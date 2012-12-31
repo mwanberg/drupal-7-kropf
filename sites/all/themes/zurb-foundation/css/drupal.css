@@ -1,0 +1,53 @@
+/* Some sane Drupal base styles */
+
+#site-name {
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1.25;
+  margin: 0;
+  padding: 15px 0 0;
+  text-shadow: 1px 1px 1px #4D4D4D;
+  text-transform: uppercase;
+}
+
+/*Header*/
+#mobile-header {
+	color: #fff;
+	-khtml-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.15);
+	-moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.15);
+	-o-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.15);
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.15);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.15);
+	background-color: #242424;
+	border-top: 1px solid ;
+	border-color: #1b1b1b #161616 #101010;
+	background: -moz-linear-gradient(top, #2e2e2e, #1a1a1a);
+	background: -ms-linear-gradient(top, #2e2e2e, #1a1a1a);
+	background: -o-linear-gradient(top, #2e2e2e, #1a1a1a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e2e2e), to(#1a1a1a));
+	background: -webkit-linear-gradient(top, #2e2e2e, #1a1a1a);
+	background: linear-gradient(top, #2e2e2e, #1a1a1a);
+}
+
+/* Base theme styling */
+.menu a {
+	-moz-transition: background-color 0.2s linear 0s;
+    font-family: "ProximaNovaBold","Helvetica Neue","Helvetica",Arial,sans-serif;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.bottom-bar {
+  background:#eee no-repeat scroll top center;
+  border-top: 1px solid #ddd;
+  color: #555;
+  padding: 15px 0;
+}
+
+/* Drupal overrides */
+.block-search .form-autocomplete {background: none;}
+.description {padding:5px}
+
+/* Foundation overrides */
+.button.primary {margin-right: .5em;}

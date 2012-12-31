@@ -1,0 +1,64 @@
+name        = zoundation
+description = Responsive theme based on Zurb Foundation
+screenshot  = screenshot.png
+
+core        = 7.x
+engine      = phptemplate
+
+; Default core regions.
+regions[topbar_left]     = Topbar Left
+regions[topbar_right]    = Topbar Right
+regions[header]          = Header
+regions[highlighted]     = Highlighted
+regions[help]            = Help
+regions[navigation]      = Navigation
+regions[content]         = Content
+regions[sidebar_first]   = Sidebar First
+regions[sidebar_second]  = Sidebar Second
+regions[footer]          = Footer
+regions[page_top]        = Page top
+regions[page_bottom]     = Page bottom
+regions[triptych_first]  = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last]   = Triptych last
+
+; Override system messages css
+stylesheets[all][] = system.messages.css
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.admin.css
+
+stylesheets[all][] = stylesheets/app.css
+stylesheets[all][] = stylesheets/drupal_overrides.css
+stylesheets[all][] = stylesheets/general_enclosed_foundicons.css
+stylesheets[all][] = stylesheets/admin.css
+
+
+; Default theme scripts.
+scripts[] = javascripts/foundation/jquery.foundation.accordion.js
+scripts[] = javascripts/foundation/jquery.foundation.alerts.js
+scripts[] = javascripts/foundation/jquery.foundation.buttons.js
+scripts[] = javascripts/foundation/jquery.foundation.forms.js
+scripts[] = javascripts/foundation/jquery.foundation.mediaQueryToggle.js
+scripts[] = javascripts/foundation/jquery.foundation.navigation.js
+scripts[] = javascripts/foundation/jquery.foundation.orbit.js
+scripts[] = javascripts/foundation/jquery.foundation.tabs.js
+scripts[] = javascripts/foundation/jquery.foundation.tooltips.js
+scripts[] = javascripts/foundation/jquery.foundation.topbar.js
+scripts[] = javascripts/foundation/jquery.placeholder.js
+
+; Responsive Tables - Uncomment two lines below to turn on responsive tables
+;stylesheets[all][] = stylesheets/responsive-tables.css
+;scripts[] = javascripts/foundation/responsive-tables.js
+
+; Application Javascript, safe to override
+scripts[] = javascripts/foundation/app.js
+scripts[] = javascripts/scripts.js
+
+
+
+; Information added by drupal.org packaging script on 2012-12-22
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "zoundation"
+datestamp = "1356143074"
+

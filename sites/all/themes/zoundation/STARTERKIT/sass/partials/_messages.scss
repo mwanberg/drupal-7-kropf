@@ -1,0 +1,125 @@
+@import "settings";
+@import "compass/css3";
+
+// Importing Foundation elements to access div.alert-box styles in order to extend
+@import "foundation/settings";
+@import "foundation/mixins/all";
+@import "foundation/components/modules/ui";
+
+
+// Mixin that styles links in status messages and system report
+@mixin status-links {
+  a {
+    color: darken($mainColor, 30%);
+    text-shadow: none;
+
+    &:hover {
+      color: darken($mainColor, 35%);
+    }
+  }
+}
+ 
+
+// Status Messages
+div.alert-box.messages {
+  
+  @extend div.alert-box; // Pull in alert-box styles from foundation ui
+
+  @include status-links();
+
+  p {
+    .break-word {
+      word-wrap: break-word;
+    }
+  }
+
+  // Change placement and size of close "X"
+  a.close {
+    top: 7px;
+    font-size: 20px;
+  }
+
+  // Foundation does not have a warning message. Using the Highlight color variable.
+  &.warning {
+    background-color: $highlightColor;
+    color: #666;
+    text-shadow: 0 1px rgba(#666,.3);
+  }
+
+  // Styles for multiple lists in Status Message.
+  &.messages ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+
+
+// System Status Report Table
+
+
+table.system-status-report { 
+  
+  tr {
+    border-bottom: 1px solid #E9E9E9;
+  
+    td { // Creating more space in the cells
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+
+
+    td.status-icon {
+      padding: 0;
+    }
+  }
+
+  tr.error, tr.ok {
+
+    .status-title, .status-value {
+      color: $white;
+    }
+   
+    td {
+      color: $white;
+    }
+  }
+}
+
+
+// Extending Foundation alert and success styles to rows in system report rows 
+
+tr.ok, table tbody tr:nth-child(even).ok {
+  @extend div.alert-box.success; 
+  @include status-links();
+}
+
+tr.error, table tbody tr:nth-child(even).error {
+  @extend div.alert-box.alert;
+}
+
+tr.info, table tbody tr:nth-child(even).info {
+  @extend div.alert-box.secondary;
+}
+
+tr.warning, table tbody tr:nth-child(even).warning {
+  @extend div.alert-box.messages.warning;
+}
+
+// Styles for Krumo Devel messages
+div.alert-box .krumo-root {
+  color: black;
+  text-shadow: none;
+  width: 90%;
+  display: inline-block;
+}
+
+.krumo-call {
+  color: black;
+}
+

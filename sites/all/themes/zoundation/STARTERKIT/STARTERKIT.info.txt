@@ -1,0 +1,55 @@
+; The name, description and screenshot used for this theme on the Appearance
+; page at admin/appearance.
+
+screenshot  = screenshot.png
+name        = Zoundation Sub-theme Starter Kit
+description = Read the <a href="http://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zoundation.
+
+; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zoundation.
+
+core        = 7.x
+base theme  = zoundation
+
+; Default core regions.
+regions[topbar_left]     = Topbar Left
+regions[topbar_right]    = Topbar Right
+regions[header]          = Header
+regions[highlighted]     = Highlighted
+regions[help]            = Help
+regions[navigation]      = Navigation
+regions[content]         = Content
+regions[sidebar_first]   = Sidebar First
+regions[sidebar_second]  = Sidebar Second
+regions[footer]          = Footer
+regions[page_top]        = Page top
+regions[page_bottom]     = Page bottom
+regions[triptych_first]  = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last]   = Triptych last
+
+; Override system messages css
+stylesheets[all][] = system.messages.css
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.admin.css
+
+stylesheets[all][] = stylesheets/app.css
+stylesheets[all][] = stylesheets/drupal_overrides.css
+stylesheets[all][] = stylesheets/general_enclosed_foundicons.css
+stylesheets[all][] = stylesheets/admin.css
+
+; Default theme scripts.
+; Uncomment to use any of the theme scripts below. By default, they are turned off.
+;scripts[] = javascripts/foundation/jquery.foundation.magellan.js
+;scripts[] = javascripts/foundation/jquery.foundation.reveal.js
+;scripts[] = javascripts/foundation/jquery.foundation.clearing.js
+;scripts[] = javascripts/foundation/jquery.foundation.joyride.js
+
+; Responsive Tables - Uncomment two lines below to turn on responsive tables
+;stylesheets[all][] = stylesheets/responsive-tables.css
+;scripts[] = javascripts/foundation/responsive-tables.js
+
+; Application Javascript, safe to override
+
+; Uncomment app.js to use any of the theme scripts defined above.
+;scripts[] = javascripts/foundation/app.js 
+scripts[] = javascripts/scripts.js

@@ -1,0 +1,104 @@
+dl.node-type-list dt, dl.admin-list dt {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+dl.node-type-list dd, dl.admin-list dd {
+  margin-bottom: 30px;
+}
+
+div.alert-box .krumo-root {
+  color: black;
+  text-shadow: none;
+  width: 90%;
+  display: inline-block;
+}
+
+.krumo-call {
+  color: black;
+}
+
+/**
+ * @file
+ * Styles for administration pages.
+ */
+/**
+ * Administration blocks.
+ */
+.compact-link {
+  margin-bottom: 20px;
+}
+
+.system-themes-list {
+  margin-bottom: 20px;
+}
+
+.system-themes-list-disabled {
+  border-top: 1px solid #e9e9e9;
+  padding-top: 20px;
+}
+
+.theme-selector {
+  padding: 30px;
+  margin: 40px 0;
+  background: #e9e9e9;
+}
+.theme-selector ul {
+  margin-top: 10px;
+}
+.theme-selector ul li {
+  margin-left: 20px;
+}
+.theme-selector ul li a {
+  font-weight: bold;
+}
+.theme-selector .theme-description {
+  color: #222;
+}
+.theme-selector img {
+  float: left;
+  margin-right: 5%;
+  width: 40%;
+}
+.theme-selector .theme-info {
+  float: left;
+  width: 55%;
+}
+
+.theme-selector.theme-default {
+  background: #2ba6cb;
+  border: none;
+}
+.theme-selector.theme-default h3, .theme-selector.theme-default a {
+  color: white;
+}
+.theme-selector.theme-default img {
+  border: 1px solid white;
+  background: white;
+}
+
+.page-admin table {
+  width: 100%;
+}
+
+.page-admin select {
+  width: auto;
+}
+.page-admin #edit-intro {
+  margin-bottom: 20px;
+}
+.page-admin .form-item-menu-main-links-source {
+  margin-bottom: 30px;
+}
+.page-admin .form-item-menu-main-links-source * {
+  margin-bottom: 10px;
+}
+.page-admin .form-item-menu-secondary-links-source {
+  margin-bottom: 30px;
+}
+.page-admin .form-item-menu-secondary-links-source * {
+  margin-bottom: 10px;
+}
+.page-admin .description {
+  font-style: italic;
+  color: #6f6f6f;
+}
